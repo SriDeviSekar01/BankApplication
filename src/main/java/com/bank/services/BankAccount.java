@@ -3,8 +3,8 @@ package com.bank.services;
 import com.bank.services.operations.AccountType;
 
 public abstract class BankAccount {
-    private Long accountNumber;
-    private String accountHolder;
+    private final Long accountNumber;
+    private final String accountHolder;
     private double balance;
 
     public BankAccount(Long accountNumber, String accountHolder, double balance) {
