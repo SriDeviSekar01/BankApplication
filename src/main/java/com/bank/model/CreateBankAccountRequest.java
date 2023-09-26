@@ -3,8 +3,6 @@ package com.bank.model;
 import com.bank.services.operations.AccountType;
 import com.bank.utils.ValidationsUtils;
 
-import java.util.function.Predicate;
-
 public class CreateBankAccountRequest {
     private Long accountNumber;
     private String accountHolderName;

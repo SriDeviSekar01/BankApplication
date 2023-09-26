@@ -5,16 +5,11 @@ import com.bank.exception.BankApplicationException;
 import com.bank.implementation.CheckingAccount;
 import com.bank.model.CheckBalanceOperationRequest;
 import com.bank.services.BankOperationType;
-import com.bank.utils.ScannerUtils;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnitRunner;
-
-import java.io.ByteArrayInputStream;
-import java.io.InputStream;
-import java.util.Scanner;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertThrows;

@@ -1,7 +1,5 @@
 package com.bank.model;
 
-import com.bank.utils.ValidationsUtils;
-
 public class WithDrawOperationRequest {
     private Long accountNumber;
     private double amount;

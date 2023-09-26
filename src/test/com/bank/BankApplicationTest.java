@@ -1,7 +1,6 @@
 package com.bank;
 
 import com.bank.exception.BankApplicationException;
-import org.junit.Test;
 
 import static org.junit.Assert.assertThrows;
 
