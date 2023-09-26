@@ -31,7 +31,7 @@ public class BankApplication {
 
                 BankOperation bankOperation = this.bankOperationFactory.getOperationAndThrowErrorIfNotFound(bankOperationType);
                 Object response = bankOperation.process(bankOperation.getInputAndBuildRequest(input));
-                System.out.println("Operation completed successfully. " + response);
+                System.out.println(bankOperationType.getPostProcessLogMessage() + " : "+ response);
             } catch (InputMismatchException inputMismatchException) {
                 System.out.println("Invalid input. Please try again");
                 ScannerUtils.initialize();
@@ -48,7 +48,7 @@ public class BankApplication {
         }
 
         if (bankOperationType == BankOperationType.QUIT) {
-            System.out.println("Thank you. Visit again");
+            System.out.println(bankOperationType.getPostProcessLogMessage());
             System.exit(0);
         }
         return false;
